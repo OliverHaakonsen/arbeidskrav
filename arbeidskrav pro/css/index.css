@@ -1,0 +1,128 @@
+.play {
+    z-index: 999;
+    position: absolute;
+    top: 57%;
+    left:43%;
+    width: 74px;
+    height: 74px;
+    border-style: solid;
+    border-width: 40px 0px 40px 70px;
+    border-color: black black black yellow;
+
+}
+
+.pause {
+    z-index: 999;
+    position: absolute;
+    top: 57%;
+    left: 47%;
+    width: 74px;
+    height: 82px;
+    border-color: black yellow black black;
+    border-style: double;
+    border-width: 0px 68px 0px 0px;
+    background-color: black
+    
+}
+    
+
+
+body {
+    background-color: black
+}
+
+
+.hovedside-vid {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 20%;
+}
+
+    
+.tekst-scroll {
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    font-family:inherit;
+    font-size: 25px;
+    color: yellow;
+    transform: translateX(100%);
+    animation: moving 10s linear infinite;
+    overflow:auto;
+    width: 100%;
+    z-index: 99;
+}
+
+@keyframes moving {
+    0%{
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.bredde-joker {
+    width: 100%;
+    bottom: 5%;
+    background-color:transparent;
+    position: absolute;
+    transform: translateX(100%);
+    animation: joker 10s linear infinite;
+    animation-delay: 1.5s;
+    overflow: auto;
+    z-index: 99;
+}
+.b-joker {
+    width: 7%;
+}
+
+@keyframes joker{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.hovedside-vid {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 20%;
+}
+
+
+
+body {
+  background-color: black;
+}
+
+.logo-knapp {
+  height: 200px;
+  width: 280px;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  z-index: 99 !important;
+  animation-name: logo-bevegelse;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  
+
+  
+}
+
+@keyframes logo-bevegelse {
+  0% {
+  
+   transform: scale(0) rotate(4320deg)
+  }
+
+  100% {
+    transform: scale(1);
+    }

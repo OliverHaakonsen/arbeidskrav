@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/index.css" />
+    <meta charset="UTF-8" />
+    <title>Batman</title>
+  </head>
+  <body>
+   <a href=/side2.html><img src="bilder/logo.png" class="logo-knapp"></a>
+    <div class="tekst-scroll">
+      <p>Arbeidskrav av Stian, August, Petter, Dewehi og Oliver</p>
+    </div>
+    <div class="bredde-joker">
+        <img src="bilder/jokerwalking.gif" class="b-joker">
+    </div>
+    <img src="vid/New_DC_intro.gif" class="hovedside-vid">
+<audio id="avspiller" autoplay loop>
+    <source src="lyd/Batman%20Theme%20Song..mp3" type="audio/mp3">
+</audio>
+
+   <button onclick="playAud()" type="button" class="play"></button>
+   <button onclick = "pauseAud()" type="button" class="pause"></button>
+   
+  
+
+<script>
+
+var aud =document.getElementById("avspiller");
+    
+    function playAud() {
+        aud.play();
+    }
+    
+    function pauseAud(){
+        aud.pause();
+    }
+
+
+</script>
+
+  </body>
+</html>
